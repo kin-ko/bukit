@@ -2,15 +2,13 @@ package com.bukit.android;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.*;
 
 public class MainActivity extends Activity {
-	
-	private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,35 +18,26 @@ public class MainActivity extends Activity {
         SetSearchButtonClickListener();
     }
 
-
     public void SetSearchButtonClickListener(){
-    	
     	ImageButton btnSearch = (ImageButton)findViewById(R.id.btnSearch);
     	
     	btnSearch.setOnClickListener(new View.OnClickListener() {
-			
+    		@Override
 			public void onClick(View v) {
-				
-				progressDialog = ProgressDialog.show(MainActivity.this, "", "Loading...");
-				
 				try
 				{
-					//TextView txtPostcode = (TextView)findViewById(R.id.txtPostcode);
+					Intent intent = new Intent(MainActivity.this, SearchResultActivity.class);
 					
-					Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-					
-			     	//intent.putExtra("postcode", txtPostcode.getText().toString());
-					
+			     	intent.putExtra("what", "restaurants");
+			     	intent.putExtra("where", "victoria");
 			     	startActivity(intent);
 				}
 				catch(Exception e){
-					//TextView txtPostcode = (TextView)findViewById(R.id.txtPostcode);
+					Log.e("Error", e.getMessage(), e);
+					e.printStackTrace();
 				}
-				
-				progressDialog.dismiss();
 			}
 		});
-    	
     }
     
     @Override

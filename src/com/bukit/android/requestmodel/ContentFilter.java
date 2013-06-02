@@ -1,0 +1,17 @@
+package com.bukit.android.requestmodel;
+
+public enum ContentFilter {
+	SHORT_DESCRIPTOR("shortDescriptor"), MEDIUM_DESCRIPTOR("mediumDescriptor"), DESCRIPTOR("descriptor"),
+	BUSINESS_LOGO("businessLogo"), IMAGE_GALLERY("imageGallery"), IMAGE("image"), VIDEO("video");
+	
+	private final String name;
+
+	private ContentFilter(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return name;
+	}
+}

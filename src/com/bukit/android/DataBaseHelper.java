@@ -195,37 +195,6 @@ public class DataBaseHelper extends SQLiteOpenHelper{
     }
     
     
-public Restaurant getAllRestaurantDetails (String id){
-    	
-    	
-    	Restaurant restaurant = new Restaurant();
-        // Select All Query
-        String selectQuery = "SELECT * FROM " + TABLE_NAME + " WHERE _id = " + id;
- 
-        SQLiteDatabase db = myDataBase;
-        Cursor cursor = db.rawQuery(selectQuery, null);
-        //Cursor cursor = db.query(TABLE_NAME, new String[] {"_id", "business_name", "address", "description"}, null, null, null, null, null);
- 
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	restaurant.setID(Integer.parseInt(cursor.getString(cursor.getColumnIndex("_id"))));
-            	restaurant.setAddress(cursor.getString(cursor.getColumnIndex("address")));
-            	restaurant.setBusinessName(cursor.getString(cursor.getColumnIndex("business_name")));
-            	restaurant.setDescription(cursor.getString(cursor.getColumnIndex("description")));
-            	restaurant.setEmail(cursor.getString(cursor.getColumnIndex("email")));
-            	restaurant.setFullDescription(cursor.getString(cursor.getColumnIndex("full_description")));
-            	restaurant.setPhone(cursor.getString(cursor.getColumnIndex("phone")));
-            	restaurant.setPostcode(cursor.getString(cursor.getColumnIndex("postcode")));
-            	restaurant.setSuburb(cursor.getString(cursor.getColumnIndex("suburb")));
-            	restaurant.setWebsite(cursor.getString(cursor.getColumnIndex("website")));
-            	restaurant.setBusinessImage(cursor.getBlob(cursor.getColumnIndex("business_image")));
-            } while (cursor.moveToNext());
-        }
- 
-        return restaurant;
-    }
-    
     // Creating Tables
     @Override
     public void onCreate(SQLiteDatabase db) {

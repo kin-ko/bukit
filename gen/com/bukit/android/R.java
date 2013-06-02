@@ -38,35 +38,34 @@ public final class R {
         public static final int www=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001c;
-        public static final int address_image=0x7f080012;
+        public static final int action_settings=0x7f08001b;
+        public static final int address_image=0x7f080010;
         public static final int btnSearch=0x7f080002;
         public static final int btnSetting=0x7f080004;
         public static final int btnUser=0x7f080003;
-        public static final int duration=0x7f08001b;
-        public static final int email_image=0x7f080016;
+        public static final int duration=0x7f08001a;
+        public static final int email_image=0x7f080014;
         public static final int imageView1=0x7f080008;
-        public static final int imgBusinessImage=0x7f08000d;
-        public static final int lblAddress=0x7f080013;
-        public static final int lblBusinessName=0x7f08000e;
-        public static final int lblEmail=0x7f080017;
-        public static final int lblFullDescription=0x7f080018;
-        public static final int lblHeadline=0x7f08000f;
-        public static final int lblPhone=0x7f080011;
+        public static final int lblAddress=0x7f080011;
+        public static final int lblBusinessName=0x7f08000c;
+        public static final int lblEmail=0x7f080015;
+        public static final int lblFullDescription=0x7f080017;
+        public static final int lblHeadline=0x7f08000d;
+        public static final int lblOpeningHours=0x7f080016;
+        public static final int lblPhone=0x7f08000f;
         public static final int lblPostcode=0x7f080009;
-        public static final int lblWebsite=0x7f080015;
-        public static final int list_image=0x7f08001a;
-        public static final int lvRestaurants=0x7f08000a;
-        public static final int phone_image=0x7f080010;
-        public static final int rl_complete_string_end=0x7f08000c;
-        public static final int scrollView1=0x7f08000b;
+        public static final int lblWebsite=0x7f080013;
+        public static final int list_image=0x7f080019;
+        public static final int phone_image=0x7f08000e;
+        public static final int rl_complete_string_end=0x7f08000b;
+        public static final int scrollView1=0x7f08000a;
         public static final int tableLayout1=0x7f080000;
         public static final int tableRow1=0x7f080001;
         public static final int tableRow2=0x7f080005;
         public static final int tableRow3=0x7f080006;
         public static final int tableRow4=0x7f080007;
-        public static final int thumbnail=0x7f080019;
-        public static final int www_image=0x7f080014;
+        public static final int thumbnail=0x7f080018;
+        public static final int www_image=0x7f080012;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -79,8 +78,11 @@ public final class R {
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int api_key=0x7f050003;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
+        public static final int proxy_path=0x7f050004;
+        public static final int proxy_port=0x7f050005;
     }
     public static final class style {
         /** 

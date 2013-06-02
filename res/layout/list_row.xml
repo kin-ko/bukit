@@ -16,8 +16,8 @@
  
         <ImageView
             android:id="@+id/list_image"
-            android:layout_width="60dip"
-            android:layout_height="60dip"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
             android:src="@drawable/no_image"/>
  
     </LinearLayout>
@@ -32,7 +32,7 @@
         android:layout_toRightOf="@+id/thumbnail"
         android:textColor="#040404"
         android:typeface="sans"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textStyle="bold"/>
  
     <!-- Artist Name -->
@@ -42,51 +42,29 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/lblBusinessName"
         android:textColor="#343434"
-        android:textSize="12sp"
+        android:textSize="10sp"
         android:layout_marginTop="1dip"
         android:layout_toRightOf="@+id/thumbnail" />
  
-    <ImageView
-            android:id="@+id/phone_image"
-            android:layout_width="16dip"
-            android:layout_height="16dip"
-            android:layout_below="@id/lblHeadline"
-        	android:layout_marginTop="2dip"
-        	android:layout_marginRight="3dip"
-        	android:layout_toRightOf="@+id/thumbnail"
-            android:src="@drawable/phone"/>
     <TextView
         android:id="@+id/lblPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lblHeadline"
         android:layout_marginTop="1dip"
-        android:layout_toRightOf="@+id/phone_image"
+        android:layout_toRightOf="@+id/thumbnail"
 		android:textColor="#343434"
-        android:textSize="12sp"
-   		>
-    </TextView>
+        android:textSize="10sp"/>
     
-    <ImageView
-            android:id="@+id/address_image"
-            android:layout_width="16dip"
-            android:layout_height="16dip"
-            android:layout_below="@id/phone_image"
-        	android:layout_marginTop="2dip"
-        	android:layout_marginRight="3dip"
-        	android:layout_toRightOf="@+id/thumbnail"
-            android:src="@drawable/address"/>
     <TextView
         android:id="@+id/lblAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lblPhone"
         android:layout_marginTop="1dip"
-        android:layout_toRightOf="@+id/address_image"
+        android:layout_toRightOf="@+id/thumbnail"
 		android:textColor="#343434"
-        android:textSize="12sp"
-   		>
-    </TextView>
+        android:textSize="10sp" />
     
     <!-- Rightend Duration -->
     <TextView
@@ -96,11 +74,10 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@id/lblBusinessName"
         android:gravity="right"
-        android:text=""
         android:layout_marginRight="5dip"
         android:textSize="10dip"
         android:textColor="#10bcc9"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
  
      <!-- Rightend Arrow -->
      <ImageView android:layout_width="wrap_content"

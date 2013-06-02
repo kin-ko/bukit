@@ -4,125 +4,128 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
         
-<RelativeLayout 
+	<RelativeLayout 
                 android:layout_width="wrap_content" 
                 android:layout_height="wrap_content" 
                 android:id="@+id/rl_complete_string_end"
                 android:paddingTop="14dip"
-                    android:paddingBottom="0dip"
-                    android:paddingRight="10dip"
-                    android:paddingLeft="12dip">
+                android:paddingBottom="0dip"
+                android:paddingRight="10dip"
+                android:paddingLeft="12dip">
 
-   	<TableLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:stretchColumns="0" >
-		
-   	   <TableRow>
-		 	<ImageView
-	            android:id="@+id/imgBusinessImage"
-	            android:layout_width="120dip"
-	            android:layout_height="120dip"
-	            android:layout_span="2"
-	            android:src="@drawable/no_image" />
-       </TableRow>
-       <TableRow>
-            <TextView
-		        android:id="@+id/lblBusinessName"
-		        android:layout_width="wrap_content"
-		        android:textColor="#040404"
-		        android:typeface="sans"
-		        android:textSize="25sp"
-		        android:layout_span="2"
-		        android:textStyle="bold"/>
-
-        </TableRow>
-
-        <TableRow >
-            <TextView
-		        android:id="@+id/lblHeadline"
-		        android:layout_width="wrap_content"
-		        android:textColor="#343434"
-		        android:textSize="14sp" 
-		        android:layout_span="2"/>
-        </TableRow>
-
-        <TableRow>
-            <ImageView
-	            android:id="@+id/phone_image"
-	            android:layout_width="0px"
-	            android:layout_height="16dip"
-	            android:layout_weight="0.1"
-	            android:layout_marginRight="3dip"
-	            android:src="@drawable/phone" />
-            <TextView
-		        android:id="@+id/lblPhone"
-		        android:layout_width="wrap_content"
-		        android:textColor="#343434"
-		        android:layout_weight="0.9"
-		        android:textSize="12sp" 
-		        android:textStyle="bold" />
-        </TableRow>
-        
-        <TableRow>
-            <ImageView
-	            android:id="@+id/address_image"
-	            android:layout_width="0px"
-	            android:layout_height="16dip"
-	            android:layout_weight="0.1"
-	            android:layout_marginRight="3dip"
-	            android:src="@drawable/address" />
-            <TextView
-		        android:id="@+id/lblAddress"
-		        android:layout_width="wrap_content"
-		        android:textColor="#343434"
-		        android:textSize="12sp" 
-		        android:layout_weight="0.9"
-		        android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow>
-            <ImageView
-	            android:id="@+id/www_image"
-	            android:layout_width="0px"
-	            android:layout_height="16dip"
-	            android:layout_weight="0.1"
-	            android:layout_marginRight="3dip"
-	            android:src="@drawable/www" />
-            <TextView
-		        android:id="@+id/lblWebsite"
-		        android:layout_width="wrap_content"
-		        android:textColor="#343434"
-		        android:layout_weight="0.9"
-		        android:textSize="12sp" 
-		        android:textStyle="bold" />
-        </TableRow>
-        
-        <TableRow >
-            <ImageView
-	            android:id="@+id/email_image"
-	            android:layout_width="0px"
-	            android:layout_height="16dip"
-	            android:layout_weight="0.1"
-	            android:layout_marginRight="3dip"
-	            android:src="@drawable/email" />
-            <TextView
-		        android:id="@+id/lblEmail"
-		        android:layout_width="wrap_content"
-		        android:textColor="#343434"
-		        android:textSize="12sp" 
-		        android:layout_weight="0.9" 
-		        android:textStyle="bold" />
-        </TableRow>
-        
-        <TableRow>
-            <TextView
-		        android:id="@+id/lblFullDescription"
-		        android:layout_width="wrap_content"
-		        android:textColor="#343434"
-		        android:textSize="12sp" 
-		        android:layout_span="2"/>
-        </TableRow>        
-    </TableLayout>
-</RelativeLayout>
+	   	<TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:shrinkColumns="0">
+			
+	   	    <!-- 
+	   	   <TableRow>
+			 	<ImageView
+		            android:id="@+id/imgBusinessImage"
+		            android:layout_width="120dip"
+		            android:layout_height="120dip"
+		            android:layout_span="2"
+		            android:src="@drawable/no_image" />
+	       </TableRow>
+	        -->
+	       <TableRow>
+	            <TextView
+			        android:id="@+id/lblBusinessName"
+			        android:layout_width="wrap_content"
+			        android:textColor="#040404"
+			        android:typeface="sans"
+			        android:textSize="15sp"
+			        android:layout_span="2"
+			        android:textStyle="bold"/>
+	
+	        </TableRow>
+	
+	        <TableRow >
+	            <TextView
+			        android:id="@+id/lblHeadline"
+			        android:layout_width="wrap_content"
+			        android:textColor="#343434"
+			        android:textSize="14sp" 
+			        android:layout_span="2"/>
+	        </TableRow>
+	
+	        <TableRow>
+	            <ImageView
+		            android:id="@+id/phone_image"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="3dp"
+		            android:src="@drawable/phone" />
+	            <TextView
+			        android:id="@+id/lblPhone"
+			        android:layout_width="wrap_content"
+			        android:textColor="#343434"
+			        android:textSize="12sp" 
+			        android:textStyle="bold" />
+	        </TableRow>
+	        
+	        <TableRow>
+	            <ImageView
+		            android:id="@+id/address_image"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="3dp"
+		            android:src="@drawable/address" />
+	            <TextView
+			        android:id="@+id/lblAddress"
+			        android:layout_width="wrap_content"
+			        android:textColor="#343434"
+			        android:textSize="12sp" 
+			        android:textStyle="bold" />
+	        </TableRow>
+	
+	        <TableRow>
+	            <ImageView
+		            android:id="@+id/www_image"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="3dp"
+		            android:src="@drawable/www" />
+	            <TextView
+			        android:id="@+id/lblWebsite"
+			        android:layout_width="wrap_content"
+			        android:textColor="#343434"
+			        android:textSize="12sp" 
+			        android:textStyle="bold" />
+	        </TableRow>
+	        
+	        <TableRow >
+	            <ImageView
+		            android:id="@+id/email_image"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="3dp"
+		            android:src="@drawable/email" />
+	            <TextView
+			        android:id="@+id/lblEmail"
+			        android:layout_width="wrap_content"
+			        android:textColor="#343434"
+			        android:textSize="12sp" 
+			        android:textStyle="bold" />
+	        </TableRow>
+	        
+	        <TableRow>
+	            <WebView
+			        android:id="@+id/lblOpeningHours"
+			        android:layout_width="wrap_content"
+			        android:textColor="#343434"
+			        android:layout_span="2"/>
+	        </TableRow>
+	        
+	        <TableRow>
+	            <TextView
+			        android:id="@+id/lblFullDescription"
+			        android:layout_width="fill_parent"
+			        android:textColor="#343434"
+			        android:textSize="12sp" 
+			        android:layout_span="2"/>
+	        </TableRow>
+	        
+	    </TableLayout>
+	</RelativeLayout>
 </ScrollView>
